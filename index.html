@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Andiwe Art | Study & Desk Organization</title>
+  <meta name="description" content="Andiwe Art offers stylish study desk organization products, stationery organizers, cable management kits and productivity bundles. Order via WhatsApp or arrange collection in Pennyville, Johannesburg.">
+  <meta name="keywords" content="Andiwe Art, study desk organizer, desk organization Johannesburg, student stationery organizer, cable management kit, Pennyville">
+  <meta name="author" content="Andiwe Art">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Andiwe Art | Study & Desk Organization">
+  <meta property="og:description" content="Make your space work for you. Shop stylish study and desk organization products from Andiwe Art.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="study-desk-starter-kit.png">
+
+  <style>
+    :root{
+      --pink:#f5b8ca; --pink-dark:#c85c82; --cream:#fff9f7;
+      --ink:#242331; --muted:#6e6974; --white:#fff; --line:#f0dce3;
+      --shadow:0 15px 45px rgba(45,30,40,.10); --radius:24px;
+    }
+    *{box-sizing:border-box;scroll-behavior:smooth}
+    body{margin:0;font-family:Inter,Arial,sans-serif;color:var(--ink);background:var(--cream);line-height:1.6}
+    a{text-decoration:none;color:inherit}
+    .container{width:min(1120px,92%);margin:auto}
+    header{position:sticky;top:0;z-index:20;background:rgba(255,249,247,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+    nav{height:72px;display:flex;align-items:center;justify-content:space-between}
+    .brand{font-size:1.45rem;font-weight:800;letter-spacing:-.5px}
+    .brand span{color:var(--pink-dark)}
+    .navlinks{display:flex;gap:24px;font-weight:650;font-size:.95rem}
+    .navlinks a:hover{color:var(--pink-dark)}
+    .menu{display:none;border:0;background:none;font-size:1.6rem}
+    .hero{padding:70px 0 55px;background:linear-gradient(135deg,#fff9f7 0%,#ffe9f0 55%,#f8efff 100%)}
+    .hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
+    .eyebrow{display:inline-block;background:#fff;border:1px solid var(--line);padding:7px 14px;border-radius:999px;font-size:.85rem;font-weight:800;color:var(--pink-dark)}
+    h1{font-size:clamp(2.5rem,6vw,4.7rem);line-height:1.02;margin:18px 0}
+    h1 span{color:var(--pink-dark)}
+    .lead{font-size:1.12rem;color:var(--muted);max-width:580px}
+    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 20px;border-radius:999px;font-weight:800;border:1px solid transparent;cursor:pointer}
+    .btn-primary{background:#242331;color:#fff}.btn-primary:hover{transform:translateY(-2px)}
+    .btn-pink{background:var(--pink-dark);color:#fff}
+    .btn-light{background:#fff;border-color:var(--line)}
+    .hero-img{width:100%;border-radius:28px;box-shadow:var(--shadow);display:block}
+    section{padding:70px 0}
+    .section-head{text-align:center;max-width:720px;margin:0 auto 38px}
+    .section-head h2{font-size:2.2rem;margin:0 0 8px}
+    .section-head p{color:var(--muted);margin:0}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:24px;box-shadow:0 8px 25px rgba(45,30,40,.05)}
+    .card h3{margin:10px 0 5px}
+    .icon{width:50px;height:50px;border-radius:16px;background:#ffe7ef;display:grid;place-items:center;font-size:1.5rem}
+    .price{font-size:1.5rem;font-weight:900;margin:15px 0}
+    .small{font-size:.9rem;color:var(--muted)}
+    .product-img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:18px;background:#fff0f4}
+    .product-card{padding:14px;overflow:hidden}
+    .product-card .inside{padding:12px 7px 5px}
+    .badge{display:inline-block;font-size:.75rem;font-weight:800;background:#f4edf8;padding:5px 9px;border-radius:999px}
+    .why{background:#fff}
+    .features{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+    .feature{text-align:center;padding:22px;border:1px solid var(--line);border-radius:20px;background:#fff}
+    .feature strong{display:block;margin-top:7px}
+    .contact{background:#242331;color:#fff}
+    .contact .section-head p{color:#d7d3db}
+    .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+    .contact-box{background:#302f3d;border:1px solid #484653;border-radius:24px;padding:26px}
+    .contact-box a{color:#ffd5e2}
+    .address{font-style:normal}
+    footer{background:#191821;color:#cfcbd4;padding:28px 0;text-align:center;font-size:.9rem}
+    .notice{margin-top:15px;padding:13px 16px;background:#fff7e7;border:1px solid #f0dfb5;border-radius:14px;color:#65562e;font-size:.9rem}
+    .floating{position:fixed;right:18px;bottom:18px;z-index:30;background:#25D366;color:#fff;padding:13px 18px;border-radius:999px;font-weight:900;box-shadow:0 10px 25px rgba(0,0,0,.2)}
+    @media(max-width:850px){
+      .hero-grid,.contact-grid{grid-template-columns:1fr}
+      .grid{grid-template-columns:repeat(2,1fr)}
+      .features{grid-template-columns:repeat(2,1fr)}
+      .navlinks{display:none}.menu{display:block}
+      .hero{padding-top:45px}
+    }
+    @media(max-width:560px){
+      .grid,.features{grid-template-columns:1fr}
+      nav{height:64px}.brand{font-size:1.2rem}
+      section{padding:55px 0}
+    }
+  </style>
+
+  <!-- Basic LocalBusiness structured data. Replace the URL after you publish the site. -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"LocalBusiness",
+    "name":"Andiwe Art",
+    "description":"Study and desk organization products, stationery organizers, cable management kits and productivity bundles.",
+    "telephone":"+27638862322",
+    "address":{
+      "@type":"PostalAddress",
+      "streetAddress":"1161B2 Gemsbok Road",
+      "addressLocality":"Pennyville",
+      "addressRegion":"Gauteng",
+      "addressCountry":"ZA"
+    },
+    "areaServed":"Johannesburg, Gauteng, South Africa"
+  }
+  </script>
+</head>
+
+<body>
+<header>
+  <div class="container">
+    <nav>
+      <a class="brand" href="#top">Andiwe <span>Art</span></a>
+      <div class="navlinks">
+        <a href="#products">Products</a><a href="#why">Why Us</a><a href="#contact">Contact</a>
+      </div>
+      <button class="menu" aria-label="Open menu" onclick="document.querySelector('.navlinks').style.display='flex'">☰</button>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <span class="eyebrow">Study • Organise • Focus • Succeed</span>
+        <h1>Make your <span>space</span> work for you.</h1>
+        <p class="lead">Stylish, practical desk and study organization products designed for students, home offices and busy professionals.</p>
+        <div class="actions">
+          <a class="btn btn-pink" href="#products">Shop Products</a>
+          <a class="btn btn-light" href="https://wa.me/27638862322?text=Hi%20Andiwe%20Art%2C%20I%27d%20like%20to%20place%20an%20order." target="_blank" rel="noopener">Order on WhatsApp</a>
+        </div>
+        <div class="notice">📍 In-person orders/collection available in Pennyville, Johannesburg. Please contact us first to confirm stock and collection arrangements.</div>
+      </div>
+      <div>
+        <img class="hero-img" src="study-desk-starter-kit.png" alt="Andiwe Art Study Desk Starter Kit">
+      </div>
+    </div>
+  </section>
+
+  <section id="products">
+    <div class="container">
+      <div class="section-head">
+        <h2>Our Products</h2>
+        <p>Simple, useful products that help you create a cleaner and more productive workspace.</p>
+      </div>
+
+      <div class="grid">
+        <article class="card product-card">
+          <div class="inside">
+            <span class="badge">Best seller concept</span>
+            <h3>Study Desk Starter Kit</h3>
+            <p class="small">Organizer + phone stand + sticky-note holder + mini tray + cable clips.</p>
+            <div class="price">R299</div>
+            <a class="btn btn-primary" href="https://wa.me/27638862322?text=Hi%20Andiwe%20Art%2C%20I%27d%20like%20to%20order%20the%20Study%20Desk%20Starter%20Kit%20for%20R299." target="_blank" rel="noopener">Order</a>
+          </div>
+        </article>
+
+        <article class="card product-card">
+          <div class="inside">
+            <span class="badge">Tech organisation</span>
+            <h3>Cable Management Kit</h3>
+            <p class="small">Cable clips, ties and organization accessories for a neat desk.</p>
+            <div class="price">R149</div>
+            <a class="btn btn-primary" href="https://wa.me/27638862322?text=Hi%20Andiwe%20Art%2C%20I%27d%20like%20to%20order%20the%20Cable%20Management%20Kit%20for%20R149." target="_blank" rel="noopener">Order</a>
+          </div>
+        </article>
+
+        <article class="card product-card">
+          <div class="inside">
+            <span class="badge">Student essential</span>
+            <h3>Stationery Organizer</h3>
+            <p class="small">Multi-compartment organizer for pens, markers, scissors, notes and more.</p>
+            <div class="price">R199</div>
+            <a class="btn btn-primary" href="https://wa.me/27638862322?text=Hi%20Andiwe%20Art%2C%20I%27d%20like%20to%20order%20the%20Stationery%20Organizer%20for%20R199." target="_blank" rel="noopener">Order</a>
+          </div>
+        </article>
+
+        <article class="card product-card">
+          <div class="inside">
+            <span class="badge">Study & work</span>
+            <h3>Phone / Tablet Stand</h3>
+            <p class="small">A compact stand for studying, video calls and hands-free viewing.</p>
+            <div class="price">R129</div>
+            <a class="btn btn-primary" href="https://wa.me/27638862322?text=Hi%20Andiwe%20Art%2C%20I%27d%20like%20to%20order%20the%20Phone%20%2F%20Tablet%20Stand%20for%20R129." target="_blank" rel="noopener">Order</a>
+          </div>
+        </article>
+
+        <article class="card product-card">
+          <div class="inside">
+            <span class="badge">Bundle</span>
+            <h3>Complete Study Desk Bundle</h3>
+            <p class="small">A larger bundle combining core desk organization essentials.</p>
+            <div class="price">R599</div>
+            <a class="btn btn-primary" href="https://wa.me/27638862322?text=Hi%20Andiwe%20Art%2C%20I%27d%20like%20to%20order%20the%20Complete%20Study%20Desk%20Bundle%20for%20R599." target="_blank" rel="noopener">Order</a>
+          </div>
+        </article>
+
+        <article class="card product-card">
+          <div class="inside">
+            <span class="badge">Coming soon</span>
+            <h3>Exam Prep Desk Kit</h3>
+            <p class="small">A focused productivity bundle for students preparing for exams.</p>
+            <div class="price">Coming soon</div>
+            <a class="btn btn-light" href="https://wa.me/27638862322?text=Hi%20Andiwe%20Art%2C%20please%20tell%20me%20when%20the%20Exam%20Prep%20Desk%20Kit%20is%20available." target="_blank" rel="noopener">Ask on WhatsApp</a>
+          </div>
+        </article>
+      </div>
+
+      <p class="notice"><strong>Important:</strong> These are proposed launch prices for the website concept. Confirm your supplier costs, Takealot fees, packaging and delivery costs before making the prices final.</p>
+    </div>
+  </section>
+
+  <section id="why" class="why">
+    <div class="container">
+      <div class="section-head">
+        <h2>Why Andiwe Art?</h2>
+        <p>We focus on practical products that make everyday spaces feel more organised and enjoyable.</p>
+      </div>
+      <div class="features">
+        <div class="feature"><div>✨</div><strong>Stylish</strong><span class="small">Modern designs and color options.</span></div>
+        <div class="feature"><div>📚</div><strong>Student-friendly</strong><span class="small">Designed around study and productivity.</span></div>
+        <div class="feature"><div>📦</div><strong>Practical</strong><span class="small">Useful products for everyday spaces.</span></div>
+        <div class="feature"><div>💬</div><strong>Easy ordering</strong><span class="small">Contact us directly on WhatsApp.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-head">
+        <h2>Ready to order?</h2>
+        <p>Send us a WhatsApp message to check stock, colors and collection/delivery options.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-box">
+          <h3>📱 WhatsApp & Phone</h3>
+          <p><a href="tel:+27638862322">063 886 2322</a></p>
+          <p><a href="https://wa.me/27638862322" target="_blank" rel="noopener">Chat with Andiwe Art on WhatsApp →</a></p>
+        </div>
+        <div class="contact-box">
+          <h3>📍 In-person orders</h3>
+          <address class="address">
+            1161B2 Gemsbok Road<br>
+            Pennyville<br>
+            Gauteng, South Africa
+          </address>
+          <p class="small" style="color:#d7d3db">Please contact us before visiting to confirm availability and collection arrangements.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <strong>Andiwe Art</strong> · Study & Desk Organization<br>
+    © 2026 Andiwe Art. All rights reserved.
+  </div>
+</footer>
+
+<a class="floating" href="https://wa.me/27638862322?text=Hi%20Andiwe%20Art%2C%20I%27d%20like%20to%20place%20an%20order." target="_blank" rel="noopener" aria-label="Order on WhatsApp">💬 WhatsApp</a>
+</body>
+</html>
